@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Home" prefHeight="836.0" prefWidth="1298.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hospital.controller.DashBoardFormController">
+   <children>
+      <VBox prefHeight="836.0" prefWidth="387.0">
+         <children>
+            <AnchorPane prefHeight="840.0" prefWidth="387.0" style="-fx-background-color: #1e272e;">
+               <children>
+                  <JFXButton layoutX="14.0" layoutY="179.0" onAction="#PatientOnAction" prefHeight="39.0" prefWidth="344.0" text="Patient" textFill="#fffafa">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="14.0" layoutY="271.0" onAction="#DoctorOnAction" prefHeight="48.0" prefWidth="344.0" text="Doctor" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="14.0" layoutY="364.0" onAction="#EmployeeOnAction" prefHeight="39.0" prefWidth="344.0" text="Employee" textFill="#fffbfb">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="48.0" fitWidth="150.0" layoutX="45.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-collaborating-in-circle-24.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="59.0" fitWidth="48.0" layoutX="47.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-stethoscope-50.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="150.0" layoutX="47.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-customer-30.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="10.0" layoutY="534.0" onAction="#btnPaymentOnAction" prefHeight="48.0" prefWidth="352.0" text="Payment" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="48.0" fitWidth="61.0" layoutX="45.0" layoutY="534.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-card-payment-50.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutY="625.0" onAction="#btnTestOnAction" prefHeight="48.0" prefWidth="352.0" text="Test" textFill="#f8f7f7">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="60.0" fitWidth="48.0" layoutX="47.0" layoutY="625.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-healthcare-64.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="29.0" layoutY="448.0" onAction="#AppointmentOnAction" prefHeight="48.0" prefWidth="344.0" text="Appointment" textFill="#fffdfd">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="48.0" fitWidth="150.0" layoutX="47.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-appointment-scheduling-50.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="29.0" layoutY="94.0" onAction="#DashboardOnAction" prefHeight="39.0" prefWidth="344.0" text="Dashboard" textFill="#f8f6f6">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="39.0" fitWidth="48.0" layoutX="51.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-dashboard-layout-24.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutY="730.0" onAction="#LogoutOnAction" prefHeight="39.0" prefWidth="373.0" text="Logout" textFill="#f5f5f5">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="39.0" fitWidth="48.0" layoutX="52.0" layoutY="730.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-logout-rounded-64.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="HOME" layoutX="387.0" prefHeight="836.0" prefWidth="1000.0" />
+   </children>
+</AnchorPane>

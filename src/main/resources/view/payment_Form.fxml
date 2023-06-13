@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="836.0" prefWidth="1000.0" style="-fx-background-color: E5BEEC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hospital.controller.PaymentFormController">
+   <children>
+      <Text layoutX="247.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Details Form" wrappingWidth="462.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="96.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment ID  :" wrappingWidth="166.6708984375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtpayment" layoutX="91.0" layoutY="201.0" onAction="#txtPaymentOnAction" prefHeight="31.0" prefWidth="414.0" />
+      <JFXButton fx:id="Payment" layoutX="651.0" layoutY="245.0" onAction="#PaymentOnAction" prefHeight="48.0" prefWidth="146.0" style="-fx-background-color: #ff0054;" text="Payment" textFill="#1a1a1b">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbApp" layoutX="265.0" layoutY="148.0" onAction="#cmbAppOnAction" prefHeight="31.0" prefWidth="235.0" />
+      <Text layoutX="96.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price  : " wrappingWidth="166.6708984375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPrice" layoutX="261.0" layoutY="253.0" onAction="#txtPriceOnAction" prefHeight="31.0" prefWidth="244.0" />
+      <TableView fx:id="table6" layoutX="133.0" layoutY="353.0" prefHeight="400.0" prefWidth="753.0">
+        <columns>
+          <TableColumn fx:id="colAID" prefWidth="189.0" text="Appointment ID" />
+          <TableColumn fx:id="colPID" prefWidth="302.0" text="Payment ID" />
+            <TableColumn fx:id="colPrice" prefWidth="261.0" text="Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
